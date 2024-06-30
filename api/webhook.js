@@ -39,6 +39,16 @@ module.exports = async (request, response) => {
                 inline_keyboard: buttons
             }});
             
+            await bot.setChatMenuButton({
+                chat_id: id,
+                menu_button: {
+                    type: 'web_app',
+                    text: 'Play',
+                    web_app: {
+                        'url': 'https://t.me/cmdemo_bot/bcoingame' // 替换为你的Web App URL
+                    }
+                }
+            });
             
         }
     }
