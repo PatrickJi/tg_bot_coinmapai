@@ -21,10 +21,14 @@ module.exports = async (request, response) => {
 
             // Create a message to send back
             // We can use Markdown inside this
-            const message = `✅ Thanks for your message: *"${text}"*\nHave a great day! 👋🏻2`;
 
             // Send our new message back in Markdown
-            await bot.sendMessage(id, message, {parse_mode: 'Markdown'});
+            if (text == 'play'){
+                await bot.sendGame(id, 'bbgame');
+            }else{
+                const message = `✅ Hello world! \n "/play"`;
+                await bot.sendMessage(id, message, {parse_mode: 'Markdown'});
+            }
         }
     }
     catch(error) {
