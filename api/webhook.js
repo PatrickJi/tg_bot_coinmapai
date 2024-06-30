@@ -30,7 +30,7 @@ module.exports = async (request, response) => {
                     {
                         'text': 'Play Game',
                         'web_app': {
-                            'url': 't.me/cmdemo_bot/bcoingame' // 替换为你的Web App URL
+                            'url': 'https://t.me/cmdemo_bot/bcoingame' // 替换为你的Web App URL
                         }
                     }
                 ]
