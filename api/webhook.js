@@ -24,7 +24,7 @@ module.exports = async (request, response) => {
 
             // Send our new message back in Markdown
            
-            const message = `✅ Hello world!`;
+            const message = `✅ Hello world! \n https://t.me/cmdemo_bot/bcoingame`;
             const buttons = [
                 [
                     {
@@ -35,7 +35,7 @@ module.exports = async (request, response) => {
                     }
                 ]
             ]
-            await bot.sendMessage(id, message, {parse_mode: 'Markdown', reply_markup: {
+            await bot.sendMessage(id, message, {reply_markup: {
                 inline_keyboard: buttons
             }});
             
