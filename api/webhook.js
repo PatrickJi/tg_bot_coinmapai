@@ -23,12 +23,23 @@ module.exports = async (request, response) => {
             // We can use Markdown inside this
 
             // Send our new message back in Markdown
-            if (text == '/play'){
-                await bot.sendGame(id, 'bbgame');
-            }else{
-                const message = `✅ Hello world! \n "/play"`;
-                await bot.sendMessage(id, message, {parse_mode: 'Markdown'});
-            }
+           
+            const message = `✅ Hello world!`;
+            const buttons = [
+                [
+                    {
+                        'text': 'Play Game',
+                        'web_app': {
+                            'url': 't.me/cmdemo_bot/bcoingame' // 替换为你的Web App URL
+                        }
+                    }
+                ]
+            ]
+            await bot.sendMessage(id, message, {parse_mode: 'Markdown', reply_markup: {
+                inline_keyboard: buttons
+            }});
+            
+            
         }
     }
     catch(error) {
