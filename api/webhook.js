@@ -23,7 +23,7 @@ module.exports = async (request, response) => {
             // We can use Markdown inside this
 
             // Send our new message back in Markdown
-            if (text == 'play'){
+            if (text == '/play'){
                 await bot.sendGame(id, 'bbgame');
             }else{
                 const message = `✅ Hello world! \n "/play"`;
