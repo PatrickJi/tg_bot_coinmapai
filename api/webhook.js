@@ -31,7 +31,7 @@ App Center: t.me/CoinMapAi_bot/BotsCenter`
                     {
                         'text': 'App Center',
                         'web_app': {
-                            'url': 'https://t.me/cmdemo_bot/bcoingame' // 替换为你的Web App URL
+                            'url': 'https://t.me/CoinMapAi_bot/BotsCenter' // 替换为你的Web App URL
                         }
                     }
                 ]
@@ -40,16 +40,16 @@ App Center: t.me/CoinMapAi_bot/BotsCenter`
                 inline_keyboard: buttons
             }});
             
-            await bot.setChatMenuButton({
-                chat_id: id,
-                menu_button: {
-                    type: 'web_app',
-                    text: 'AppCenter',
-                    web_app: {
-                        'url': 'https://t.me/CoinMapAi_bot/BotsCenter' // 替换为你的Web App URL
-                    }
-                }
-            });
+            // await bot.setChatMenuButton({
+            //     chat_id: id,
+            //     menu_button: {
+            //         type: 'web_app',
+            //         text: 'AppCenter',
+            //         web_app: {
+            //             'url': 'https://t.me/CoinMapAi_bot/BotsCenter' // 替换为你的Web App URL
+            //         }
+            //     }
+            // });
             
         }
     }
