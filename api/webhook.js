@@ -24,8 +24,7 @@ module.exports = async (request, response) => {
 
             // Send our new message back in Markdown
            
-            const message = `Welcome to CoinMapAi - Web3 One-Stop Navigation.\nThis bot is dedicated to the Telegram Apps platform, including bots, web apps, and games.\n
-            Subcribe our channel:https://t.me/CoinMapAi\n
+            const message = `Welcome to CoinMapAi - Web3 One-Stop Navigation.\nThis bot is dedicated to the Telegram Apps platform, including bots, web apps, and games.\nSubscribe our channel:https://t.me/CoinMapAi\n
 App Center: t.me/CoinMapAi_bot/BotsCenter`
             const buttons = [
                 [
