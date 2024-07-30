@@ -24,11 +24,12 @@ module.exports = async (request, response) => {
 
             // Send our new message back in Markdown
            
-            const message = `✅ Hello world! \n https://t.me/cmdemo_bot/bcoingame`;
+            const message = `Welcome to CoinMapAi - Web3 One-Stop Navigation \n Our channel is dedicated to the Telegram Apps platform, including bots, web apps, and games.\n
+App Center: t.me/CoinMapAi_bot/BotsCenter`
             const buttons = [
                 [
                     {
-                        'text': 'Play Game',
+                        'text': 'App Center',
                         'web_app': {
                             'url': 'https://t.me/cmdemo_bot/bcoingame' // 替换为你的Web App URL
                         }
@@ -39,16 +40,16 @@ module.exports = async (request, response) => {
                 inline_keyboard: buttons
             }});
             
-            // await bot.setChatMenuButton({
-            //     chat_id: id,
-            //     menu_button: {
-            //         type: 'web_app',
-            //         text: 'Play',
-            //         web_app: {
-            //             'url': 'https://t.me/cmdemo_bot/bcoingame' // 替换为你的Web App URL
-            //         }
-            //     }
-            // });
+            await bot.setChatMenuButton({
+                chat_id: id,
+                menu_button: {
+                    type: 'web_app',
+                    text: 'AppCenter',
+                    web_app: {
+                        'url': 'https://t.me/CoinMapAi_bot/BotsCenter' // 替换为你的Web App URL
+                    }
+                }
+            });
             
         }
     }
