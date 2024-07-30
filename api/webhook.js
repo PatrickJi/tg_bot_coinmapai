@@ -24,7 +24,7 @@ module.exports = async (request, response) => {
 
             // Send our new message back in Markdown
            
-            const message = `Welcome to CoinMapAi - Web3 One-Stop Navigation \n Our channel is dedicated to the Telegram Apps platform, including bots, web apps, and games.\n
+            const message = `Welcome to CoinMapAi - Web3 One-Stop Navigation.\nThis bot is dedicated to the Telegram Apps platform, including bots, web apps, and games.\n
 App Center: t.me/CoinMapAi_bot/BotsCenter`
             const buttons = [
                 [
@@ -36,9 +36,7 @@ App Center: t.me/CoinMapAi_bot/BotsCenter`
                     }
                 ]
             ]
-            await bot.sendMessage(id, message, {reply_markup: {
-                inline_keyboard: buttons
-            }});
+            await bot.sendMessage(id, message);
             
             // await bot.setChatMenuButton({
             //     chat_id: id,
