@@ -25,13 +25,13 @@ module.exports = async (request, response) => {
             // Send our new message back in Markdown
            
             const message = `Welcome to CoinMapAi - Web3 One-Stop Navigation.\nThis bot is dedicated to the Telegram Apps platform, including bots, web apps, and games.\nSubscribe our channel:https://t.me/CoinMapAi\n
-App Center: t.me/CoinMapAi_bot/BotsCenter`
+App Center: t.me/CoinMapAi_bot/CoinMapAi`
             const buttons = [
                 [
                     {
                         'text': 'App Center',
                         'web_app': {
-                            'url': 'https://t.me/CoinMapAi_bot/BotsCenter' // 替换为你的Web App URL
+                            'url': 'https://t.me/CoinMapAi_bot/CoinMapAi' // 替换为你的Web App URL
                         }
                     }
                 ]
